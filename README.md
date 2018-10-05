@@ -1,1 +1,1 @@
-Super Mario Part Save Editor
+Super Mario Party Save Editor
