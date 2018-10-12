@@ -1,8 +1,8 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.Windows;
 using MahApps.Metro.Controls;
-
+using System.Diagnostics;
 
 namespace MarioPartySaveEditor
 {
@@ -29,6 +29,10 @@ namespace MarioPartySaveEditor
                     }
                     catch (Exception) { } //who cares
                 }
+                else
+                {
+                    MessageBox.Show("Invalid Save File !");
+                }
             }
         }
 
@@ -48,6 +52,11 @@ namespace MarioPartySaveEditor
 
                 }
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://github.com/SubstituteCS/Super-Mario-Part-Save-Editor");
         }
     }
 }
